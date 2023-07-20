@@ -1,70 +1,70 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'Poppins', sans-serif;
 }
 
-.img1{
+.img1 {
     padding-left: 1px;
     margin-left: 0;
 }
 
-.navbar{
+.navbar {
     display: flex;
     align-items: center;
     padding: 20px;
 }
 
-nav{
+nav {
     flex: 1;
     text-align: right;
 }
 
-nav ul{
+nav ul {
     display: inline-block;
     list-style-type: none;
 }
 
-nav ul li{
+nav ul li {
     display: inline-block;
     margin-right: 20px;
 }
 
-a{
+a {
     text-decoration: none;
     color: #555;
 }
 
-p{
+p {
     color: #555;
 }
 
-.container{
+.container {
     max-width: 1300px;
     margin: 0 auto; /* Center the container horizontally */
     padding: 20px;
 }
 
-.row{
+.row {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
-.col-2{
+.col-2 {
     flex-basis: 50%;
     min-width: 300px;
     position: relative;
 }
 
-.col-2 img{
+.col-2 img {
     max-width: 100%;
-    padding: 50px 0; 
+    padding: 50px 0;
     margin: 20px;
 }
 
@@ -75,12 +75,12 @@ p{
     padding: 0;
 }
 
-.paragraph-1{
+.paragraph-1 {
     margin: 20px 0;
     padding: 0;
 }
 
-.btn{
+.btn {
     display: inline-block;
     background: #ff523b;
     padding: 8px 30px;
@@ -90,40 +90,41 @@ p{
     transition: background 0.5s;
 }
 
-.btn:hover{
+.btn:hover {
     background: #563434;
 }
 
-.header{
+.header {
     background: radial-gradient(#fff, #ffd6d6);
     padding: 40px 0;
 }
 
-.header .row{
+.header .row {
     margin-top: 20px; /* Adjust the margin-top for larger screens */
 }
 
-.categories{
+.categories {
     margin: 40px 0;
 }
 
-.col-3{
+.col-3 {
     flex-basis: 30%;
+    padding: 10px;
     min-width: 250px;
     margin-bottom: 30px;
 }
 
-.col-3 img{
+.col-3 img {
     width: 100%;
 }
 
-.small-container{
+.small-container {
     max-width: 1080px;
     margin: auto;
     padding: 20px;
 }
 
-.col-4{
+.col-4 {
     flex-basis: 25%;
     padding: 10px;
     min-width: 200px;
@@ -131,11 +132,11 @@ p{
     transition: transform 0.5s;
 }
 
-.col-4 img{
+.col-4 img {
     width: 100%;
 }
 
-.title{
+.title {
     text-align: center;
     margin: 0 auto 80px;
     position: relative;
@@ -143,11 +144,11 @@ p{
     color: #555;
 }
 
-.title::after{
+.title::after {
     content: '';
     background: #ff523b;
     width: 80px;
-    height:5px;
+    height: 5px;
     border-radius: 5px;
     position: absolute;
     bottom: 0;
@@ -155,19 +156,68 @@ p{
     transform: translateX(-50%);
 }
 
-h4{
+h4 {
     color: #555;
     font-weight: normal;
 }
 
-.col-4 p{
+.col-4 p {
     font-size: 14px;
 }
 
-.rating .fa{
+.rating .fa {
     color: #ff523b;
 }
 
-.col-4:hover{
+.col-4:hover {
     transform: translateY(-5px);
+}
+
+/* Add the styles for the offer section */
+.offer {
+    background: radial-gradient(#fff, #ffd6d6);
+    padding: 30px 0;
+    margin-top: 80px;
+}
+
+.offer-img {
+    max-width: 100%;
+    width: 300px;
+    /* Adjust this width to your desired size */
+}
+
+/* Add styles for the testimonial section */
+.testimonial {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.testimonial .col-3 {
+    flex-basis: 30%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
+
+.testimonial .col-3:hover {
+    transform: translateY(-10px);
+}
+
+.fa.fa-quote-left {
+    font-size: 34px;
+    color: #ff523b;
+}
+
+.col-3 p {
+    font-size: 12px;
+    margin: 12px 0;
+    color: #777;
+}
+
+.testimonial .col-3 h3 {
+    font-weight: 600;
+    color: #555;
+    font-size: 16px;
 }
